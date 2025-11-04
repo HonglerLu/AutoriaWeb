@@ -1,0 +1,29 @@
+.container {
+    display: grid;
+    gap: 5px;
+    padding: 5px;
+    grid-template-columns: auto auto auto;
+    background-color: cornflowerblue;
+    height: 128px;
+}
+
+.item {
+    text-align: center;
+    background-color:white;
+    font-size: larger;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.one {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.two {
+    grid-row: 1 / span 2;
+    grid-column: 3;
+}
+
+.five {
+    grid-column: 1 / span 3;
+}

@@ -1,0 +1,14 @@
+.container {
+    background-color: cornflowerblue;
+    width: 326px;
+    height: 256px;
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+}
+.item {
+    background-color: cornsilk;
+    width: 42px;
+    height: 42px;
+    margin: 42px;
+}
