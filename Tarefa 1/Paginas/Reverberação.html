@@ -69,5 +69,36 @@
         </div>
     </div>
 
+    <script>
+        const imagens = {
+            Dialogo: document.getElementById('Dialogo'),
+            Combate: document.getElementById('Combate'),
+            DialogoLight: document.getElementById('DialogoLight'),
+            CombateLight: document.getElementById('CombateLight'),
+        }
+        const Dialogo = document.getElementById('btnDialogo')
+        const Combate = document.getElementById('btnCombate')
+        const DialogoLight = document.getElementById('btnDialogoLight')
+        const CombateLight = document.getElementById('btnCombateLight')
+
+        function Trocar(Novo, Texto){
+            for (const ind in imagens){
+                imagens[ind].style.display = (ind == Novo) ? 'block' : 'none'
+            }
+            document.getElementById('BtnImagem').textContent = Texto;
+        }
+        Dialogo.addEventListener('click', () => Trocar('Dialogo', 
+            Dialogo.innerText
+        ));
+        Combate.addEventListener('click', () => Trocar('Combate',
+            Combate.innerText
+        ));
+        DialogoLight.addEventListener('click', () => Trocar('DialogoLight',
+            DialogoLight.innerHTML
+        ));
+        CombateLight.addEventListener('click', () => Trocar('CombateLight',
+            CombateLight.innerHTML
+        ));
+    </script>
 </body>
 </html>
