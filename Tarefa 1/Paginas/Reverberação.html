@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="config.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
-<body style="padding: 1rem;">
+<body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary" style="margin-bottom: 1rem;">
     <div class="container-fluid">
         <a class="navbar-brand" href="https://libraryofruina.wiki.gg/wiki/Philip" target="_blank">Philip (Library of Ruina)</a>
@@ -37,19 +37,37 @@
     </div>
     </nav>
 
-    <div class="d-flex align-items-start">
-        <div class="flex-fill">
+    <div class="row">
+        <div class="col">
             <h1>a</h1>
         </div>
-        <div class="card" style="width: 18rem; padding: 1rem;">
-            <h4 class="text-center">Philip</h1>
-            <img src="../Imagens/PhilipCombatIdle.webp" class="card-img-top" alt="Philip" style="height: 22rem; width: auto; object-fit: contain;">  
-            <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="col-auto">
+            <div class="card" style="width: 18rem; padding: 1rem;">
+                <h4 class="text-center">Philip (Reverberação)</h1>
+                <div class="btn-group" role="group" style="margin: 1rem;">
+                    <button type="button" class="btn bg-body-tertiary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="BtnImagem">
+                        Dialogo (Conjunto)
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><button type="button" class="btn dropdown-item" id="btnDialogo">Dialogo (Conjunto)</button></li>
+                        <li><button type="button" class="btn dropdown-item" id="btnCombate">Combate (Conjunto)</button></li>
+                        <li><button type="button" class="btn dropdown-item" id="btnDialogoLight">Dialogo (Distorcido)</button></li>
+                        <li><button type="button" class="btn dropdown-item" id="btnCombateLight">Combate (Distorcido)</button></li>
+                    </ul>
+                </div>
+                <img src="../Imagens/PhilipEnsembleFullBody.webp" class="card-img-top" alt="Philip" id="Dialogo" style="height: 24rem; width: auto; object-fit: contain;">
+                <img src="../Imagens/EnsemblePhilipCombatIdle.webp" class="card-img-top" alt="Philip" id="Combate" style="height: 24rem; width: auto; object-fit: contain; display: none;">
+                <img src="../Imagens/DistortedPhilipDialogue.webp" class="card-img-top" alt="Philip" id="DialogoLight" style="height: 24rem; width: auto; object-fit: contain; display: none;">
+                <img src="../Imagens/DistortedCryingChildrenCombatIdle.webp" class="card-img-top" alt="Philip" id="CombateLight" style="height: 24rem; width: auto; object-fit: contain; display: none;">
+                
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
             </div>
         </div>
     </div>
+
 </body>
 </html>
