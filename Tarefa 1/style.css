@@ -5,3 +5,9 @@ body {
     height: 2rem;
     object-fit: contain;
 }
+img[src="../Imagens/LightIcon.webp"] {
+    height: 1rem;
+}
+img {
+    object-fit: contain;
+}
