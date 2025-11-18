@@ -11,3 +11,14 @@ img[src="../Imagens/LightIcon.webp"] {
 img {
     object-fit: contain;
 }
+
+@media (max-width: 900px){
+    #separador {
+        display: none;
+    }
+    #img_oswald {
+        flex-direction: column !important;
+        color: gray;
+        padding: 1rem;
+    }
+}
